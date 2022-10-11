@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- Bài tập 1 -->
+  <div class="container">
+    <div class="card w-50 text-center">
+      <div class="card-top bg-primary d-flex justify-content-center ">
+        <h3>Bài 1: Tính tiền lương nhân viên</h3>
+      </div>
+      <div class="card-body">
+        <span class="text-primary">Tiền lương 1 ngày</span>
+        <input type="number" class="form-control w-25 d-inline" id="luong1Ngay" placeholder="Nhập vào đây">
+        <span class="text-primary">Số ngày làm</span>
+        <input type="number" class="form-control w-25 d-inline" id="soNgayLam" placeholder="Nhập vào đây">
+        <button class="btn btn-success mt-1" id="bai1">Tính tiền</button>
+      </div>
+      <div>
+        <span class="text-white bg-primary" id="ketQua1"></span>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br>
+  <!-- Bài tập 2 -->
+  <div class="container">
+    <div class="card w-50 text-center">
+      <div class="card-top bg-primary d-flex justify-content-center">
+        <h3>Bài 2: Tính giá trị trung bình</h3>
+      </div>
+      <div class="card-body">
+        <input type="number" id="numb1" placeholder="Số thực 1">
+        <input type="number" id="numb2" placeholder="Số thực 2">
+        <input type="number" id="numb3" placeholder="Số thực 3">
+        <input type="number" id="numb4" placeholder="Số thực 4">
+        <input type="number" id="numb5" placeholder="Số thực 5">
+      </div>
+      <button class="btn btn-success mt-1 d-block" id="bai2">Kết quả</button>
+      <div>
+        <span class="text-white bg-primary" id="ketQua2"></span>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- bài tập 3 -->
+  <div class="container">
+    <div class="card w-50 text-center">
+      <div class="card-top bg-primary d-flex justify-content-center">
+        <h3>Bài 3: Quy đổi tiền</h3>
+      </div>
+      <div class="card-body">
+        <span class="text-primary">Nhập vào số USD</span>
+        <input type="number" id="soTienUSD" placeholder="Nhập số tiền USD">
+      </div>
+      <button class="btn btn-success mt-1" id="bai3">Quy đổi</button>
+      <div>
+        <span class="text-white bg-primary" id="ketQua3"></span>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- bài tập 4 -->
+  <div class="container">
+    <div class="card w-50 text-center">
+      <div class="card-top bg-primary d-flex justify-content-center">
+        <h3>Bài 4: Tính diện tích, chu vi hình chữ nhật</h3>
+      </div>
+      <div class="card-body">
+        <span class="text-primary">Nhập chiều dài</span>
+        <input type="number"  class="form-control w-50 d-inline" id="nhapChieuDai" placeholder="Nhập số chiều dài">
+        <br>
+        <span class="text-primary">Nhập chiều rộng</span>
+        <input type="number"  class="form-control w-50 d-inline" id="nhapChieuRong" placeholder="Nhập số chiều rộng">
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-success mt-1" id="bai4">Kết quả</button>
+            <div>
+                <span class="text-white bg-primary" id="ketQua4"></span>
+            </div>
+      </div>
+    </div>
+  </div>
+<br>
+  <!-- bài tập 5 -->
+  <div class="container">
+    <div class="card w-50 text-center">
+      <div class="card-top bg-primary d-flex justify-content-center">
+        <h3>Bài 5: Tính tổng 2 ký số</h3>
+      </div>
+      <div class="card-body">
+        <span class="text-primary">Nhập số có 2 chữ số</span>
+        <input type="number" class="form-control w-50 d-inline" id="nhapSo" placeholder="Nhập số có 2 chữ số">
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-success mt-1" id="bai5">Kết quả</button>
+        <div>
+            <span class="text-white bg-primary" id="ketQua5"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
